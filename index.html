@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find it! - A fun and challenging online game.">
-    <link rel="canonical" href="https://funny100.online">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Findit - A captivating online game that challenges your observation skills. Find hidden objects in beautifully crafted scenes." />
+    <link rel="canonical" href="https://www.findiiit.online" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-        }
-        .game-container {
-            background: linear-gradient(135deg, #1a1c20 0%, #2d3748 100%);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            transition: transform 0.3s ease;
-        }
-        .game-container:hover {
-            transform: scale(1.01);
-        }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+      .game-container {
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+      .game-container:hover {
+        transform: scale(1.01);
+      }
+      .apple-gradient {
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+      }
+      .apple-text {
+        background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     </style>
-    <title>Find it! - Funny100.online</title>
-</head>
-<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 font-sans min-h-screen text-white">
+    <title>Findit - A Challenging Online Game | www.findiiit.online</title>
+  </head>
+  <body class="apple-gradient font-sans min-h-screen text-white">
     <div class="container max-w-5xl mx-auto px-4 md:px-8 py-8 md:py-16">
-        <h1 class="text-5xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent drop-shadow-xl animate-fade-in" style="opacity: 0">Find it!</h1>
-        <p class="text-xl text-center mb-12 text-blue-200 leading-relaxed md:leading-relaxed animate-fade-in" style="opacity: 0; animation-delay: 0.2s">A fun and challenging online game where you need to find hidden objects.</p>
-        <div class="relative game-container rounded-2xl overflow-hidden my-8 animate-fade-in" style="opacity: 0; animation-delay: 0.4s; padding-top: 56.25%">
-            <iframe 
-                src="https://unblocked-games.s3.amazonaws.com/games/2025/unity/find-it/index.html"
-                class="absolute top-0 left-0 w-full h-full"
-                style="object-fit: cover"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="space-y-12 animate-fade-in" style="opacity: 0; animation-delay: 0.6s">
-            <div class="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700/30 hover:border-blue-500/30 transition-all duration-300">
-                <h2 class="text-2xl font-semibold mb-4 text-blue-300 border-l-4 border-blue-500 pl-3">About the Game</h2>
-                <p class="text-lg text-gray-300 leading-relaxed">Find it! is a captivating online game that tests your observation skills. The game presents you with various scenes where you need to find specific objects hidden within the environment.</p>
-            </div>
+      <h1 class="text-5xl md:text-6xl font-bold text-center mb-8 apple-text drop-shadow-xl animate-fade-in" style="opacity: 0">Findit</h1>
+      <p class="text-xl text-center mb-12 text-gray-300 leading-relaxed md:leading-relaxed animate-fade-in" style="opacity: 0; animation-delay: 0.2s">Challenge your observation skills in this beautifully crafted hidden object game.</p>
+      
+      <div class="relative game-container my-8 animate-fade-in" style="opacity: 0; animation-delay: 0.4s; padding-top: 56.25%">
+        <iframe 
+          src="https://unblocked-games.s3.amazonaws.com/games/2025/unity/find-it/index.html"
+          class="absolute top-0 left-0 w-full h-full"
+          style="object-fit: cover"
+          allowfullscreen>
+        </iframe>
+      </div>
 
-            <div class="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700/30 hover:border-purple-500/30 transition-all duration-300">
-                <h2 class="text-2xl font-semibold mb-4 text-purple-300 border-l-4 border-purple-500 pl-3">How to Play</h2>
-                <p class="text-lg text-gray-300 leading-relaxed">Use your mouse to navigate through the scenes and click on the hidden objects. The faster you find them, the higher your score!</p>
-            </div>
-
-            <div class="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700/30 hover:border-pink-500/30 transition-all duration-300">
-                <h2 class="text-2xl font-semibold mb-4 text-pink-300 border-l-4 border-pink-500 pl-3">Tips and Tricks</h2>
-                <p class="text-lg text-gray-300 leading-relaxed">Pay attention to details and look for patterns. Sometimes, the objects are cleverly disguised within the scene.</p>
-            </div>
+      <div class="space-y-12 animate-fade-in" style="opacity: 0; animation-delay: 0.6s">
+        <div class="bg-black/30 rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300">
+          <h2 class="text-2xl font-semibold mb-4 text-white border-l-4 border-white/30 pl-3">About Findit</h2>
+          <p class="text-lg text-gray-300 leading-relaxed">Findit is an engaging online game that puts your observation skills to the test. Each level presents a unique scene where carefully hidden objects await discovery. With its minimalist design and intuitive gameplay, Findit offers a perfect blend of challenge and entertainment.</p>
         </div>
+
+        <div class="bg-black/30 rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300">
+          <h2 class="text-2xl font-semibold mb-4 text-white border-l-4 border-white/30 pl-3">Game Features</h2>
+          <ul class="text-lg text-gray-300 leading-relaxed space-y-2">
+            <li>• Beautifully designed scenes with hidden objects</li>
+            <li>• Progressive difficulty levels</li>
+            <li>• Smooth, responsive controls</li>
+            <li>• Mobile-friendly interface</li>
+            <li>• Instant feedback on discoveries</li>
+          </ul>
+        </div>
+
+        <div class="bg-black/30 rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300">
+          <h2 class="text-2xl font-semibold mb-4 text-white border-l-4 border-white/30 pl-3">How to Play</h2>
+          <p class="text-lg text-gray-300 leading-relaxed">Use your mouse or touch screen to explore each scene. Click or tap on the hidden objects when you find them. The faster you locate all items, the higher your score. Pay attention to details and think outside the box - some objects might be cleverly disguised!</p>
+        </div>
+
+        <div class="bg-black/30 rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300">
+          <h2 class="text-2xl font-semibold mb-4 text-white border-l-4 border-white/30 pl-3">Pro Tips</h2>
+          <ul class="text-lg text-gray-300 leading-relaxed space-y-2">
+            <li>• Start by scanning the entire scene</li>
+            <li>• Look for patterns and anomalies</li>
+            <li>• Use zoom if available for better detail</li>
+            <li>• Don't rush - take your time to observe</li>
+            <li>• Practice regularly to improve your skills</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
-</html>
+  </body>
+</html> 
